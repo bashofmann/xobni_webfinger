@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Module> 
+  <ModulePrefs title="WebFinger"
+    description="This gadget tries to search for Information about the sender of a mail through WebFinger and PortableContacts APIs."
+    author="Bastian Hofmann"
+    author_email="bashofmann@googlemail.com"
+    author_location="Berlin, Germany"
+    height="60"
+    author_affiliation="">
+    <Require feature="dynamic-height"/> 
+    <Require feature="setprefs"/> 
+    <Require feature="opensocial-0.9" />
+  </ModulePrefs> 
+ 
+ <UserPref
+    name="minimized"
+    default_value="1"
+    datatype="hidden"/> 
+    
+  <Content type="html" view="profile"> 
+    <![CDATA[
+    <link rel="stylesheet" type="text/css" href="file://Z:\xobni_webfinger\gadget.css" />
+    <div id="profile"><img src="file://Z:\xobni_webfinger\loading.gif"/></div>
+    <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+    <script type="text/javascript" charset="utf-8" src="file://Z:\xobni_webfinger\mustache.js"></script> 
+    <script type="text/javascript" charset="utf-8" src="file://Z:\xobni_webfinger\webfinger.js"></script> 
+    ]]>
+  </Content> 
+</Module>

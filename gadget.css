@@ -1,0 +1,9 @@
+#profile img {
+    max-height: 50px;
+    max-width: 50px;
+    float: left;
+}
+
+body {
+    font: 11px/18px Tahoma; 
+}
