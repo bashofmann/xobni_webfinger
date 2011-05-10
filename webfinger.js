@@ -13,7 +13,11 @@ function onOwnerReceived(response) {
 
         var emails = owner.getField(opensocial.Person.Field.EMAILS);
         var email = emails[0].getField(opensocial.Email.Field.ADDRESS);
-        loadHostMeta(email);
+        //loadHostMeta(email);
+        //return;
+        for(var i = 0; i < emails.length; i++) {
+            loadHostMeta(emails[i].getField(opensocial.Email.Field.ADDRESS));
+        }
     }
 }
 
@@ -62,13 +66,17 @@ var template = '\
 {{#urls}}\
 <a href="{{value}}" target="_blank">{{linkText}}{{type}}</a><br />\
 {{/urls}}\
-</div>\
+</div><hr />\
 ';
 
 function renderProfile(data) {
+    
     gadgets.log(gadgets.json.stringify(data));
-    $('#profile').html(Mustache.to_html(template, data));
-    gadgets.window.adjustHeight();
+    if (data) {
+        $('#loading').hide();
+        $('#profile').append(Mustache.to_html(template, data));
+        gadgets.window.adjustHeight();
+    }
 }
 
 if (typeof gadgets !== 'undefined' && gadgets.util && gadgets.util.registerOnLoadHandler) {

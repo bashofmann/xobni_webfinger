@@ -20,7 +20,8 @@
   <Content type="html" view="profile"> 
     <![CDATA[
     <link rel="stylesheet" type="text/css" href="file://Z:\xobni_webfinger\gadget.css" />
-    <div id="profile"><img src="file://Z:\xobni_webfinger\loading.gif"/></div>
+    <img src="file://Z:\xobni_webfinger\loading.gif" id="loading" />
+    <div id="profile"></div>
     <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
     <script type="text/javascript" charset="utf-8" src="file://Z:\xobni_webfinger\mustache.js"></script> 
     <script type="text/javascript" charset="utf-8" src="file://Z:\xobni_webfinger\webfinger.js"></script> 
