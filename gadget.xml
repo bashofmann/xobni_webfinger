@@ -10,6 +10,7 @@
     <Require feature="dynamic-height"/> 
     <Require feature="setprefs"/> 
     <Require feature="opensocial-0.9" />
+    <Icon>file://Z:\xobni_webfinger\icon.png</Icon>
   </ModulePrefs> 
  
  <UserPref

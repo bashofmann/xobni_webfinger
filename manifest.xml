@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <ApplicationManifest xmlns="http://schemas.google.com/ApplicationManifest/2009"> 
     <Name>WebFinger</Name> 
-    <Description></Description> 
+    <Description>This gadget tries to search for Information about the sender of a mail through WebFinger and PortableContacts APIs.</Description> 
 
-    <Extension id="XobniWebFingerGadget" type="gadget"> 
+    <Extension id="WebFingerGadget" type="gadget"> 
         <Url>gadget.xml</Url> 
         <Container name="mail"/> 
     </Extension> 
